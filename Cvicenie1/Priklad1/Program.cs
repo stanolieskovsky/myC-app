@@ -9,6 +9,8 @@ namespace Priklad1
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("ahoj ");
+            Console.ReadLine();
         }
     }
 }

@@ -1,0 +1,5 @@
+C:\Users\liesko3\Documents\GitHub\C#\myC-app\Cvicenie1\Priklad1\obj\Debug\Priklad1.csprojResolveAssemblyReference.cache
+C:\Users\liesko3\Documents\GitHub\C#\myC-app\Cvicenie1\Priklad1\bin\Debug\Priklad1.exe
+C:\Users\liesko3\Documents\GitHub\C#\myC-app\Cvicenie1\Priklad1\bin\Debug\Priklad1.pdb
+C:\Users\liesko3\Documents\GitHub\C#\myC-app\Cvicenie1\Priklad1\obj\Debug\Priklad1.exe
+C:\Users\liesko3\Documents\GitHub\C#\myC-app\Cvicenie1\Priklad1\obj\Debug\Priklad1.pdb
