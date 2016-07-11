@@ -1,0 +1,4 @@
+C:\Users\liesko3\Documents\GitHub\C#\myC-app\Cvicenie1\Priklad1\bin\Release\Priklad1.exe
+C:\Users\liesko3\Documents\GitHub\C#\myC-app\Cvicenie1\Priklad1\bin\Release\Priklad1.pdb
+C:\Users\liesko3\Documents\GitHub\C#\myC-app\Cvicenie1\Priklad1\obj\Release\Priklad1.exe
+C:\Users\liesko3\Documents\GitHub\C#\myC-app\Cvicenie1\Priklad1\obj\Release\Priklad1.pdb
