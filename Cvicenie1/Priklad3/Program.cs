@@ -3,6 +3,10 @@ using System.IO;
 
 namespace Priklad3
 {
+    /*
+     skolske cviko1. priklad 3
+         
+         */
     /// <summary>
     /// Zdrojovy kod je podrobne okomentovany. Pouzil som dokumentacne XML komentare (tri lomky za sebou). 
     /// Tieto je mozne neskor exportovat, avsak hlavne maju zmysel pre tvorbu helpu (IntelliSense ich dokaze 
