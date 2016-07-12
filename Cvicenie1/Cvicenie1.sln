@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Priklad1", "Priklad1\Prikla
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Priklad2", "Priklad2\Priklad2.csproj", "{8EF2AEE8-16FC-4AE1-B5E9-1C8045BAF160}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Priklad3", "Priklad3\Priklad3.csproj", "{C5D4E068-8539-4D75-ABCD-21D1C1D82D08}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{8EF2AEE8-16FC-4AE1-B5E9-1C8045BAF160}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8EF2AEE8-16FC-4AE1-B5E9-1C8045BAF160}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8EF2AEE8-16FC-4AE1-B5E9-1C8045BAF160}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5D4E068-8539-4D75-ABCD-21D1C1D82D08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5D4E068-8539-4D75-ABCD-21D1C1D82D08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5D4E068-8539-4D75-ABCD-21D1C1D82D08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5D4E068-8539-4D75-ABCD-21D1C1D82D08}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
