@@ -27,7 +27,7 @@ namespace Task1
             get { return _firstName; }
             set { _firstName = value; }
         }
-
+       
         /// <summary>
         /// Priezvisko. // Priklad auto property
         /// </summary>
@@ -67,12 +67,12 @@ namespace Task1
         }
 
         /// <summary>
-        /// Vrati retazec v tvare Meno Priezvisko (Vek).
+        /// Vrati retazec v tvare Meno Priezvisko [Vek].
         /// </summary>
-        /// <returns>Retazec v tvare Meno Priezvisko (Vek).</returns>
+        /// <returns>Retazec v tvare Meno Priezvisko [Vek].</returns>
         public override string ToString()
         {
-            return string.Format("{0} {1} ({2})", FirstName, LastName, Age);
+            return string.Format("{0} {1} [{2}]", FirstName, LastName, Age);
         }
 
         protected bool Equals(Person other)

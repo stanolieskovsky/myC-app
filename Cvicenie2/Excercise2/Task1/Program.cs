@@ -9,41 +9,41 @@ namespace Task1
         static void Main()
         {
             // Vytvorenie pomocou parametrickeho konstruktora
-            var jano = new Person("Jan", "Mrkvicka", new DateTime(2000, 12, 1));
+            var Stanoo = new Person("Stano", "Mrkvicka", new DateTime(2000, 12, 1));
 
             // Vytvorenie pomocou bezparametrickeho konstruktora, inicializacia vlastnosti explicitne pomocou vlastnosti 
-            var janoKlon = new Person();
-            janoKlon.FirstName = "Jan";
-            janoKlon.LastName = "Mrkvicka";
-            janoKlon.Birthday = DateTime.Parse("1.12.2000", new CultureInfo("sk"));
+            var StanooKlon = new Person();
+            StanooKlon.FirstName = "Stano";
+            StanooKlon.LastName = "Mrkvicka";
+            StanooKlon.Birthday = DateTime.Parse("1.12.2000", new CultureInfo("sk"));
 
             // Vytvorenie pomocou bezparametrickeho konstruktora s objektovym inicializatorom - inicializacia vlastnosti objektu
             var fero = new Person { FirstName = "Frantisek", LastName = "Mrkvicka", Birthday = new DateTime(2000, 1, 1) };
 
             // Vypisanie, pouziva nas prekryty ToString()
-            Console.WriteLine("jano: " + jano);
-            Console.WriteLine("janoKlon: " + janoKlon);
+            Console.WriteLine("Stanoo: " + Stanoo);
+            Console.WriteLine("StanooKlon: " + StanooKlon);
             Console.WriteLine("fero: " + fero);
             Console.WriteLine();
 
-            var compResult = jano.CompareTo(fero);
-            Console.WriteLine("jano.CompareTo(fero): {0} (Jano {1} Fero)", compResult, compResult > 0 ? ">" : (compResult < 0 ? "<" : "==")); // 1
-            Console.WriteLine("jano.Equals(fero): {0}", jano.Equals(fero)); // False
-            Console.WriteLine("jano.Equals(janoKlon): {0}", jano.Equals(janoKlon)); // True. Keby nemame vlastnu implementaciu, vracalo by to False (pretoze by sa porovnavali odkazy).
+            var compResult = Stanoo.CompareTo(fero);
+            Console.WriteLine("Stanoo.CompareTo(fero): {0} (Stanoo {1} Fero)", compResult, compResult > 0 ? ">" : (compResult < 0 ? "<" : "==")); // 1
+            Console.WriteLine("Stanoo.Equals(fero): {0}", Stanoo.Equals(fero)); // False
+            Console.WriteLine("Stanoo.Equals(StanooKlon): {0}", Stanoo.Equals(StanooKlon)); // True. Keby nemame vlastnu implementaciu, vracalo by to False (pretoze by sa porovnavali odkazy).
             Console.WriteLine();
 
-            Console.WriteLine("jano[0]: {0}", jano[0]);
-            Console.WriteLine("jano[2]: {0}", jano[2]);
-            //Console.WriteLine("jano[3]: {0}", jano[3]); // Vyhodi vynimku
-            Console.WriteLine("jano[\"Age\"]: {0}", jano["Age"]);
+            Console.WriteLine("Stanoo[0]: {0}", Stanoo[0]);
+            Console.WriteLine("Stanoo[2]: {0}", Stanoo[2]);
+            //Console.WriteLine("Stanoo[3]: {0}", Stanoo[3]); // Vyhodi vynimku
+            Console.WriteLine("Stanoo[\"Age\"]: {0}", Stanoo["Age"]);
 
-            jano[1] = "Baklazan";
-            Console.WriteLine("jano[1] = {0}", jano[1]);
-            Console.WriteLine("jano: {0}", jano);
+            Stanoo[1] = "Baklazan";
+            Console.WriteLine("Stanoo[1] = {0}", Stanoo[1]);
+            Console.WriteLine("Stanoo: {0}", Stanoo);
             Console.WriteLine();
 
             // Vygenerujeme 10 osob
-            var firstNames = new[] { "Jano", "Juraj", "Zuzka" };
+            var firstNames = new[] { "Stanoo", "Juraj", "Zuzka" };
             var lastNames = new[] { "Mrkvicka", "Parametricky", "Bezparametricky" };
             var persons = new List<Person>();
             var random = new Random();
