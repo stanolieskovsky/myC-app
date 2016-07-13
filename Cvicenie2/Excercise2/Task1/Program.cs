@@ -9,13 +9,13 @@ namespace Task1
         static void Main()
         {
             // Vytvorenie pomocou parametrickeho konstruktora
-            var Stanoo = new Person("Stano", "Mrkvicka", new DateTime(2000, 12, 1));
+            var Stanoo = new Person("Stano", "Lieskovsky", new DateTime(2000, 12, 1));
 
             // Vytvorenie pomocou bezparametrickeho konstruktora, inicializacia vlastnosti explicitne pomocou vlastnosti 
             var StanooKlon = new Person();
             StanooKlon.FirstName = "Stano";
-            StanooKlon.LastName = "Mrkvicka";
-            StanooKlon.Birthday = DateTime.Parse("1.12.2000", new CultureInfo("sk"));
+            StanooKlon.LastName = "Lieskovsky";
+            StanooKlon.Birthday = DateTime.Parse("1.12.2000");
 
             // Vytvorenie pomocou bezparametrickeho konstruktora s objektovym inicializatorom - inicializacia vlastnosti objektu
             var fero = new Person { FirstName = "Frantisek", LastName = "Mrkvicka", Birthday = new DateTime(2000, 1, 1) };
@@ -32,10 +32,12 @@ namespace Task1
             Console.WriteLine("Stanoo.Equals(StanooKlon): {0}", Stanoo.Equals(StanooKlon)); // True. Keby nemame vlastnu implementaciu, vracalo by to False (pretoze by sa porovnavali odkazy).
             Console.WriteLine();
 
+
             Console.WriteLine("Stanoo[0]: {0}", Stanoo[0]);
             Console.WriteLine("Stanoo[2]: {0}", Stanoo[2]);
             //Console.WriteLine("Stanoo[3]: {0}", Stanoo[3]); // Vyhodi vynimku
             Console.WriteLine("Stanoo[\"Age\"]: {0}", Stanoo["Age"]);
+            Console.WriteLine("Stanoo  pred zmenou na baklazan");
 
             Stanoo[1] = "Baklazan";
             Console.WriteLine("Stanoo[1] = {0}", Stanoo[1]);
