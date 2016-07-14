@@ -10,6 +10,7 @@ namespace Task1
         {
             // Vytvorenie pomocou parametrickeho konstruktora
             var Stanoo = new Person("Stano", "Lieskovsky", new DateTime(2000, 12, 1));
+            Person stano2 = new Person("Stano", "Lieskovsky", new DateTime(1990, 10, 1));
 
             // Vytvorenie pomocou bezparametrickeho konstruktora, inicializacia vlastnosti explicitne pomocou vlastnosti 
             var StanooKlon = new Person();
@@ -30,6 +31,7 @@ namespace Task1
             Console.WriteLine("Stanoo.CompareTo(fero): {0} (Stanoo {1} Fero)", compResult, compResult > 0 ? ">" : (compResult < 0 ? "<" : "==")); // 1
             Console.WriteLine("Stanoo.Equals(fero): {0}", Stanoo.Equals(fero)); // False
             Console.WriteLine("Stanoo.Equals(StanooKlon): {0}", Stanoo.Equals(StanooKlon)); // True. Keby nemame vlastnu implementaciu, vracalo by to False (pretoze by sa porovnavali odkazy).
+            Console.WriteLine("stano2{0}", stano2);
             Console.WriteLine();
 
 
