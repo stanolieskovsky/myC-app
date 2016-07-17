@@ -11,6 +11,7 @@ namespace Task1
             // Vytvorenie pomocou parametrickeho konstruktora
             var Stanoo = new Person("Stano", "Lieskovsky", new DateTime(2000, 12, 1));
             Person stano2 = new Person("Stano", "Lieskovsky", new DateTime(1990, 10, 1));
+            Person maria = new Person("Maria", "Lieskovska", new DateTime(year: 1980, month: 10, day: 1));
 
             // Vytvorenie pomocou bezparametrickeho konstruktora, inicializacia vlastnosti explicitne pomocou vlastnosti 
             var StanooKlon = new Person();
@@ -40,6 +41,7 @@ namespace Task1
             //Console.WriteLine("Stanoo[3]: {0}", Stanoo[3]); // Vyhodi vynimku
             Console.WriteLine("Stanoo[\"Age\"]: {0}", Stanoo["Age"]);
             Console.WriteLine("Stanoo  pred zmenou na baklazan");
+            Console.WriteLine(" ");//kontrola medzery
 
             Stanoo[1] = "Baklazan";
             Console.WriteLine("Stanoo[1] = {0}", Stanoo[1]);
