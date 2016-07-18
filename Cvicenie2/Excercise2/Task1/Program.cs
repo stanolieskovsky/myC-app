@@ -40,8 +40,9 @@ namespace Task1
             Console.WriteLine("Stanoo[2]: {0}", Stanoo[2]);
             //Console.WriteLine("Stanoo[3]: {0}", Stanoo[3]); // Vyhodi vynimku
             Console.WriteLine("Stanoo[\"Age\"]: {0}", Stanoo["Age"]);
-            Console.WriteLine("Stanoo  pred zmenou na baklazan");
+            Console.WriteLine("Stanoo  pred vypisu");
             Console.WriteLine(" ");//kontrola medzery
+
 
             Stanoo[1] = "Baklazan";
             Console.WriteLine("Stanoo[1] = {0}", Stanoo[1]);
@@ -49,11 +50,14 @@ namespace Task1
             Console.WriteLine();
 
             // Vygenerujeme 10 osob
+            /*
+             pouzijeme randm generator
+             */
             var firstNames = new[] { "Stanoo", "Juraj", "Zuzka" };
             var lastNames = new[] { "Mrkvicka", "Parametricky", "Bezparametricky" };
             var persons = new List<Person>();
             var random = new Random();
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < 20; i++)
             {
                 var person = new Person(firstNames[random.Next(firstNames.Length)], lastNames[random.Next(lastNames.Length)],
                     new DateTime(random.Next(1990, 2000), 1, 1));
