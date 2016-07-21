@@ -36,7 +36,7 @@ namespace Priklad3
             public RecursiveSwitchParameter()
             {
                 WasUsed = false;
-                MaxLevel = int.MaxValue; // Konstanta najvacsieho celeho mozneho cisla (2147483647)
+                MaxLevel = int.MaxValue;
             }
         }
 
@@ -59,13 +59,10 @@ namespace Priklad3
             /// </summary>
             public bool WasUsed { get; set; }
             /// <summary>
-            /// Pocet medzier.
+        
             /// </summary>
             public int SpaceCount { get; set; }
 
-            /// <summary>
-            /// Konstruktor.
-            /// </summary>
             public TreeSwitchParameter()
             {
                 WasUsed = false;
