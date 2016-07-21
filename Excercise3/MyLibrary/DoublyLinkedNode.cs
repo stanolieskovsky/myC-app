@@ -1,4 +1,4 @@
-﻿namespace Cvicenie3
+﻿namespace MyLibrary
 {
     /// <summary>
     /// Uzol obojsmerne zretazeneho zoznamu.
@@ -12,9 +12,7 @@
         public DoublyLinkedNode<T> Previous { get; set; }
         
         /// <summary>
-        /// Odkaz na nasledujuci uzol
-        /// 
-        /// 
+        /// Odkaz na nasledujuci uzol.
         /// </summary>
         public DoublyLinkedNode<T> Next { get; set; }
         
