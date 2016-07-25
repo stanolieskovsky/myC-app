@@ -5,6 +5,9 @@ using System.Text;
 
 namespace Excercise4
 {
+    /*
+     apka na stiahnutie obsahu linku
+         */
     class Program
     {
         static void Main(string[] args)
