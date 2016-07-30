@@ -11,6 +11,10 @@ namespace TestApp
             list.Add(1);
             list.Add(2);
             list.Add(3);
+            list.Add(2);
+            list.Add(3);
+            list.Add(4);
+            list.Add(5);
 
             // Pouzitie indexera zoznamu
             Console.WriteLine("Prechod pomocou for cyklu a pouzitie indexera:");
