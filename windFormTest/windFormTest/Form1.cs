@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Data.OleDb;
 
 namespace windFormTest
 {
@@ -15,9 +16,15 @@ namespace windFormTest
         {
             InitializeComponent();
         }
-
+        OleDbConnection con=new OleDbConnection("Provider=ORAOLEDB.ORACLE;Data Source=localhost;Persist Security Info=True;User ID=liesko3;Password=madagaskar;Unicode=True");
         private void button1_Click(object sender, EventArgs e)
         {
+        con.Open();
+            OleDbDataAdapter oda=new OleDbDataAdapter("select * from student",con);
+            DataTable dt=new DataTable();
+            oda.Fill(dt);
+            dataGridView1.DataSource = dt;
+            con.Close();
 
         }
     }
