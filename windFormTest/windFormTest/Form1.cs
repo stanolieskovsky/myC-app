@@ -16,11 +16,11 @@ namespace windFormTest
         {
             InitializeComponent();
         }
-        OleDbConnection con=new OleDbConnection("Provider=ORAOLEDB.ORACLE;Data Source=localhost;Persist Security Info=True;User ID=liesko3;Password=madagaskar;Unicode=True");
+        OleDbConnection con=new OleDbConnection("Provider=ORAOLEDB.ORACLE;Data Source=localhost;Persist Security Info=True;User ID=USER1;Password=password1;Unicode=True");
         private void button1_Click(object sender, EventArgs e)
         {
         con.Open();
-            OleDbDataAdapter oda=new OleDbDataAdapter("select * from student",con);
+            OleDbDataAdapter oda=new OleDbDataAdapter("select * from employees",con);
             DataTable dt=new DataTable();
             oda.Fill(dt);
             dataGridView1.DataSource = dt;
