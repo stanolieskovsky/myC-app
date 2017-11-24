@@ -8,6 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.Data.OleDb;
 
+
 namespace windFormTest
 {
     public partial class Form1 : Form
@@ -16,11 +17,14 @@ namespace windFormTest
         {
             InitializeComponent();
         }
-        OleDbConnection con=new OleDbConnection("Provider=ORAOLEDB.ORACLE;Data Source=localhost;Persist Security Info=True;User ID=USER1;Password=password1;Unicode=True");
+
+        OleDbConnection con=new OleDbConnection("Provider=ORAOLEDB.ORACLE;DATA SOURCE=localhost:1521/orcl3;USER ID=USER1;Password=password1");
+
         private void button1_Click(object sender, EventArgs e)
         {
         con.Open();
-            OleDbDataAdapter oda=new OleDbDataAdapter("select * from employees",con);
+            OleDbDataAdapter oda=new OleDbDataAdapter("select * from USER1.employees",con);
+            
             DataTable dt=new DataTable();
             oda.Fill(dt);
             dataGridView1.DataSource = dt;
