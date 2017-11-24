@@ -23,7 +23,7 @@ namespace windFormTest
         private void button1_Click(object sender, EventArgs e)
         {
         con.Open();
-            OleDbDataAdapter oda=new OleDbDataAdapter("select * from USER1.employees",con);
+            OleDbDataAdapter oda=new OleDbDataAdapter("select * from USER1.emp_temp",con);
             
             DataTable dt=new DataTable();
             oda.Fill(dt);
