@@ -24,11 +24,15 @@ namespace windFormTest
         {
         con.Open();
             OleDbDataAdapter oda=new OleDbDataAdapter("select * from USER1.emp_temp",con);
-            
             DataTable dt=new DataTable();
             oda.Fill(dt);
             dataGridView1.DataSource = dt;
             con.Close();
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
 
         }
     }
